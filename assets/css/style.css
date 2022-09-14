@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-Gray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
+    --primary-ff: 'Alata', sans-serif;
+    --secondary-ff: 'Josefin Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--primary-ff);
+    min-height: 100vh;
+}
+li{
+    list-style: none;
+    color: var(--White);
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-image: url("../images/desktop/image-hero.jpg");
+}
+nav{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 6rem;
+}
+footer{
+    background-color: var(--Black);
+}
+
+/***** ------ RE-USABLE CODE ---- ******/
+.container{
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+.section{
+    margin: 6rem 0 4rem;
+}
+.grid{
+    display: grid;
+}
+.crt_card{
+    position: relative;
+}
+.nav_lists, 
+.footer_lists{
+    display: flex;
+    column-gap: 1rem;
+}
+
+/****** ------ HEADER - NAV SECTION --*/
+
+.nav_lists{
+    display: flex;
+    column-gap: 1rem;
+}
+
+/****** -- HERO SECTION-- ******/
+.hero{
+    padding: 4rem 0 8rem;
+}
+.hero_title{
+    width: 50%;
+    font-size: 4rem;
+    font-weight: 200;
+    color: var(--White);
+    border: 2px solid var(--White);
+    background: transparent;
+    padding: 2rem;
+    font-family: var(--primary-ff);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/****** ---- FOOTER SECTION ----- *****/
+.footer_cont{
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+.footer_logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social_links{
+    display: flex;
+    column-gap: 1rem;
+}
+.footer_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_cpr{
+    color: white;
+    text-align: right;
+}
+
